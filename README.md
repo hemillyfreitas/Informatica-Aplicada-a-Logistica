@@ -1,44 +1,47 @@
 # Informática Aplicada à Logística
 
-Repositório com as atividades da disciplina de **Informática Aplicada à Logística**, organizadas por data de entrega. As atividades trabalham com **dados abertos governamentais**, usando fórmulas e gráficos no **Excel** e dashboards no **Power BI**.
+Repositório com as atividades da disciplina de **Informática Aplicada à Logística**, organizadas por sequência. As atividades trabalham com **dados abertos governamentais**, usando fórmulas e gráficos no **Excel** e dashboards no **Power BI**.
 
 ## Sumário
 
-| # | Atividade | Entrega | Ferramenta | Arquivo |
-|---|-----------|---------|------------|---------|
-| 1 | Aula 28 de agosto: Operadores de transporte multimodal (ANTT) | 29/08/2026 | Excel | `Atividade_1.xlsx` |
-| 2 | Planilhas eletrônicas e dados abertos: Autos de Infração Ambiental | 09/09/2026 | Excel | `Atividade_2.xlsx` |
-| 3 | Dados abertos: análise no Power BI | 19/09/2026 | Power BI | `Atividade_3.pbix` |
+| # | Atividade | Status | Ferramenta | Arquivo |
+|---|-----------|--------|------------|---------|
+| 1 | Apresentação em equipe – 13/08 | Concluído | — | — |
+| 2 | Aula 28 de agosto | Concluído | — | — |
+| 3 | Planilhas eletrônicas e dados abertos | Concluído | Excel | `Atividade_2.xlsx` |
+| 4 | Empresas Multimodais e Perguntas | Concluído | Excel | `Atividade_1.xlsx` |
+| 5 | Dados_abertos_5_perguntas | Concluído | Power BI | `Atividade_3.pbix` |
 
 ---
 
-## Atividade 1: Aula 28 de agosto
+## 1. Apresentação em equipe – 13/08
 
-**Entrega:** 29/08/2026 às 23:59
+<img width="948" height="527" alt="image" src="https://github.com/user-attachments/assets/f4b17d46-65b1-45e7-9e5e-f22eac26554e" />
 
-**Enunciado:** dado o arquivo de empresas com habilitação multimodal da ANTT, elaborar e responder perguntas sobre os dados, com respostas baseadas em **fórmula e gráfico do Excel**.
 
-**Fonte dos dados:** [Dados abertos da ANTT: Operador de Transporte Multimodal](https://dados.antt.gov.br/dataset/operador-transporte-multimodal/resource/9f76aca6-0e8d-4c13-8851-0ad8ced5c5b7)
+**Status:** Concluído
 
-**Base:** 1.382 empresas, com as colunas `pais_de_origem`, `razao_social`, `cnpj`, `logradouro`, `cidade`, `uf`, `cep`, `e_mail`, `cotm`, `adesao_ao_decreto_1563_95`, `dia`, `mês` e `ano`.
+Apresentação pessoal sobre minha trajetória, experiências, interesses e perspectivas profissionais.
 
-### Perguntas e respostas
-
-| Pergunta | Resposta | Fórmula |
-|----------|----------|---------|
-| **P1:** Qual estado tem a maior quantidade de empresas? | **São Paulo**, com 569 empresas. | `=COUNTIF(operador_transporte_multimodal!F:F; A2)` |
-| **P2:** Qual(is) país(es) tem(têm) a menor contagem de empresas? | **Paraguai, Alemanha e Suíça**, com 1 empresa cada. | `=COUNTIF(operador_transporte_multimodal!A:A; O2)` |
-| **P3:** Quantas empresas cumprem e quantas não cumprem a adesão ao decreto 1.563/95? | **Cumprem: 275**; **não cumprem: 1.107**. | `=COUNTIF(operador_transporte_multimodal!J:J; S2)` |
-
-Também foi criada a coluna auxiliar **Data**, que monta a data a partir das colunas de dia, mês e ano: `=DATE(M2;L2;K2)`.
-
-Os gráficos de cada pergunta estão na aba **Gráficos** do arquivo.
+### Conteúdo apresentado
 
 ---
 
-## Atividade 2: Planilhas eletrônicas e dados abertos
+## 2. Aula 28 de agosto
 
-**Entrega:** 09/09/2026 às 23:59
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/f71aa3cd-117c-48bd-84a4-28372047b95b" />
+
+
+**Status:** Concluído
+
+---
+
+## 3. Planilhas eletrônicas e dados abertos
+
+<img width="1919" height="1007" alt="image" src="https://github.com/user-attachments/assets/be29b2f5-e52d-4048-b752-e36b6cbe5447" />
+
+
+**Status:** Concluído
 
 **Enunciado:** acessar dados abertos governamentais, coletar um conjunto de dados de preferência (`.csv`) e elaborar e responder, via fórmulas ou gráficos, 5 perguntas sobre os dados.
 
@@ -81,13 +84,47 @@ As tabelas de apoio dos gráficos ficam nas colunas **AA a AL** da aba **Gráfic
 
 ---
 
-## Atividade 3: Dados abertos, análise no Power BI
+## 4. Empresas Multimodais e Perguntas
 
-**Entrega:** 19/09/2026 às 23:59
+<img width="1353" height="922" alt="image" src="https://github.com/user-attachments/assets/4fbc60a1-34f1-4dd3-9fa8-d224797837c1" />
+
+
+**Status:** Concluído
+
+**Base de dados:** [Dados abertos da ANTT: Operador de Transporte Multimodal](https://dados.antt.gov.br/dataset/operador-transporte-multimodal/resource/9f76aca6-0e8d-4c13-8851-0ad8ced5c5b7)
+
+### Ferramenta utilizada
+
+Excel.
+
+**Arquivo:** `Atividade_1.xlsx`
+
+**Base:** 1.382 empresas, com as colunas `pais_de_origem`, `razao_social`, `cnpj`, `logradouro`, `cidade`, `uf`, `cep`, `e_mail`, `cotm`, `adesao_ao_decreto_1563_95`, `dia`, `mês` e `ano`.
+
+### Perguntas e respostas
+
+| Pergunta | Resposta | Fórmula |
+|----------|----------|---------|
+| **P1:** Qual estado tem a maior quantidade de empresas? | **São Paulo**, com 569 empresas. | `=COUNTIF(operador_transporte_multimodal!F:F; A2)` |
+| **P2:** Qual(is) país(es) tem(têm) a menor contagem de empresas? | **Paraguai, Alemanha e Suíça**, com 1 empresa cada. | `=COUNTIF(operador_transporte_multimodal!A:A; O2)` |
+| **P3:** Quantas empresas cumprem e quantas não cumprem a adesão ao decreto 1.563/95? | **Cumprem: 275**; **não cumprem: 1.107**. | `=COUNTIF(operador_transporte_multimodal!J:J; S2)` |
+
+Também foi criada a coluna auxiliar **Data**, que monta a data a partir das colunas de dia, mês e ano: `=DATE(M2;L2;K2)`.
+
+Os gráficos de cada pergunta estão na aba **Gráficos** do arquivo.
+
+---
+
+## 5. Dados_abertos_5_perguntas
+
+<img width="1352" height="911" alt="image" src="https://github.com/user-attachments/assets/56f719cd-2388-41fa-8386-e7b624e55727" />
+
+
+**Status:** Concluído
 
 **Enunciado:** acessar dados abertos governamentais, considerando o que foi coletado na atividade anterior, e elaborar e responder, por meio de **dashboards no Power BI**, 5 perguntas sobre os dados.
 
-**Fonte dos dados:** os mesmos Autos de Infração Ambiental da Atividade 2.
+**Fonte dos dados:** os mesmos Autos de Infração Ambiental da atividade 3.
 
 ### Dashboard "Auto Inflação"
 
@@ -103,13 +140,13 @@ As tabelas de apoio dos gráficos ficam nas colunas **AA a AL** da aba **Gráfic
 
 **Medida em DAX (`Total Autos`):** conta as linhas da tabela dentro do filtro de cada visual.
 
-```
+```dax
 Total Autos = COUNTROWS('Autos-de-Infracao-Ambiental-a-p')
 ```
 
 **Coluna no Power Query, linguagem M (`Mes nome`):** converte o número do mês (coluna `Dia`) no nome abreviado.
 
-```
+```powerquery
 {"Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"}{[Dia]-1}
 ```
 
@@ -125,16 +162,6 @@ Total Autos = COUNTROWS('Autos-de-Infracao-Ambiental-a-p')
 
 ---
 
-## Estrutura do repositório
-
-```
-Informatica-Aplicada-a-Logistica/
-├── README.md
-├── Atividade_1.xlsx    # ANTT: operadores de transporte multimodal (Excel)
-├── Atividade_2.xlsx    # Autos de infração ambiental (Excel)
-└── Atividade_3.pbix    # Autos de infração ambiental (Power BI)
-```
-
 ## Repositório
 
-https://github.com/hemillyfreitas/Informatica-Aplicada-a-Logistica
+[https://github.com/hemillyfreitas/Informatica-Aplicada-a-Logistica](https://github.com/hemillyfreitas/Informatica-Aplicada-a-Logistica)
